@@ -1,0 +1,7 @@
+<form method ="post" action="/recipes/<%=@recipe.id%>">
+  <input id="hidden" type="hidden" name="_method" value="patch">
+  <p>Enter a updated Recipe Name:  <input placeholder="<%=@recipe.name%>" type="text" name="name"></p>
+  <p>Enter the updated Recipes Ingredients:  <input placeholder="<%=@recipe.ingredients%>" type="text" name="ingredients"></p>
+  <p>Enter the updated Recipes Cook Time:  <input placeholder="<%=@recipe.cook_time%>" type="text" name="cook_time"></p>
+  <input id="submit" type="submit">
+</form>
